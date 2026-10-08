@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the 12-week course outline for Massey University's 159223 Artificial Intelligence Methods.">
+  <meta name="color-scheme" content="light">
+  <title>159223 · Artificial Intelligence Methods · Course Outline</title>
+  <style>
+    :root {
+      --ink: #202c35;
+      --muted: #596871;
+      --line: #d7dfdf;
+      --paper: #ffffff;
+      --canvas: #f7f9f8;
+      --accent: #28685c;
+      --tint: #edf5f1;
+      --blue: #345f88;
+    }
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--canvas); font-family: "Segoe UI", Arial, sans-serif; font-size: 15px; line-height: 1.6; }
+    button, summary, a { -webkit-tap-highlight-color: transparent; }
+    button { font: inherit; }
+    button, summary { touch-action: manipulation; }
+    :focus-visible { outline: 3px solid var(--blue); outline-offset: 5px; }
+    .skip-link { position: absolute; left: 24px; top: -80px; z-index: 10; padding: 9px 16px; background: white; color: var(--ink); }
+    .skip-link:focus { top: 12px; }
+    .page { width: min(1560px, 100%); margin: 0 auto; padding: 28px 32px 24px; }
+    .masthead { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding-bottom: 22px; border-bottom: 1px solid var(--line); }
+    .course-id { display: inline-flex; align-items: center; gap: 12px; }
+    .course-number { padding: 4px 10px; border: 1px solid #b9cec4; border-radius: 5px; background: var(--tint); color: #20584d; font-size: 13px; font-weight: 700; letter-spacing: .04em; }
+    .masthead-label { font-size: 13px; color: var(--muted); }
+    .institution { font-size: 13px; color: var(--muted); }
+    .intro { padding: 28px 0 24px; }
+    .eyebrow { margin: 0 0 8px; color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: clamp(27px, 3.1vw, 40px); font-weight: 650; line-height: 1.2; letter-spacing: -.035em; }
+    .intro-copy { max-width: 730px; margin: 13px 0 0; color: var(--muted); font-size: 16px; line-height: 1.65; }
+    .meta { display: flex; flex-wrap: wrap; gap: 9px 22px; margin: 18px 0 0; font-size: 12px; color: var(--muted); }
+    .meta span { display: flex; align-items: center; gap: 7px; }
+    .meta span::before { content: ""; width: 4px; height: 4px; border-radius: 50%; background: #8a9c94; }
+    .map-panel { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; }
+    .map-header { padding: 23px 26px 19px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; border-bottom: 1px solid #e8edeb; }
+    h2 { margin: 0; font-size: 18px; font-weight: 650; letter-spacing: -.015em; }
+    .map-caption { margin: 3px 0 0; font-size: 13px; color: var(--muted); }
+    .toolbar { display: flex; gap: 8px; }
+    .tool-button { padding: 7px 12px; background: white; color: #374750; border: 1px solid var(--line); border-radius: 5px; font-size: 12px; cursor: pointer; }
+    .tool-button:hover { background: #f2f6f4; border-color: #a8bdb3; }
+    .tool-button:disabled { color: #6b767d; background: #f7f9f8; cursor: default; }
+    .scroll-hint { margin: 0; padding: 12px 26px 0; color: var(--muted); font-size: 12px; }
+    .map-scroll { overflow-x: auto; padding: 28px 26px 30px; scrollbar-color: #bacbc2 #f2f5f3; scrollbar-width: thin; }
+    .roadmap { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 24px; min-width: 1200px; align-items: start; }
+    .module { position: relative; min-width: 0; }
+    .module:not(:last-child)::after { content: ""; position: absolute; z-index: 1; top: 55px; left: calc(100% + 3px); width: 18px; border-top: 1px solid #aebfb7; pointer-events: none; }
+    .module:not(:last-child)::before { content: ""; position: absolute; z-index: 1; top: 52px; left: calc(100% + 16px); width: 6px; height: 6px; border-top: 1px solid #aebfb7; border-right: 1px solid #aebfb7; transform: rotate(45deg); pointer-events: none; }
+    .module.review::after { border-top-style: dashed; }
+    summary { list-style: none; cursor: pointer; border-radius: 7px; }
+    summary::-webkit-details-marker { display: none; }
+    summary::marker { content: ""; }
+    .module-card { height: 112px; padding: 13px 16px; border: 1px solid #ccd8d2; border-radius: 7px; background: #fafcfb; transition: border-color .15s, background-color .15s; }
+    summary:hover .module-card { border-color: #769e8a; background: #f2f7f4; }
+    details[open] .module-card { border-color: #83a494; background: var(--tint); }
+    .module-top { display: flex; align-items: center; font-size: 11px; line-height: 1.5; }
+    .module-weeks { color: var(--muted); white-space: nowrap; }
+    .module-title { display: block; margin: 12px 0 0; font-size: 18px; line-height: 1.25; font-weight: 650; letter-spacing: -.015em; }
+    .toggle-row { display: flex; align-items: center; gap: 9px; position: relative; padding-left: 20px; margin-top: 16px; }
+    .toggle-row::before { content: ""; position: absolute; left: 35px; top: -16px; height: 16px; border-left: 1px solid #becfc5; }
+    .toggle-circle { width: 31px; height: 31px; flex: 0 0 31px; border: 1px solid #9db8a9; border-radius: 50%; display: grid; place-items: center; color: var(--accent); background: white; transition: background-color .15s, color .15s; }
+    summary:hover .toggle-circle { background: var(--tint); }
+    details[open] .toggle-circle { color: white; background: var(--accent); border-color: var(--accent); }
+    .toggle-circle svg { display: block; width: 14px; height: 14px; }
+    details[open] .plus-vertical { display: none; }
+    .toggle-label { color: var(--muted); font-size: 11px; }
+    .label-open { display: none; }
+    details[open] .label-closed { display: none; }
+    details[open] .label-open { display: inline; }
+    .week-list { position: relative; margin: 0 0 0 35px; padding: 16px 0 0; border-left: 1px solid #becfc5; }
+    .week-card { position: relative; width: calc(100% + 36px); padding: 12px 14px; margin: 0 0 10px -36px; border: 1px solid #dbe4df; background: #ffffff; border-radius: 5px; }
+    .week-card:last-child { margin-bottom: 0; }
+    .week-label { margin: 0 0 5px; color: var(--accent); font-size: 11px; font-weight: 650; letter-spacing: .03em; }
+    h3 { margin: 0; font-size: 14px; font-weight: 600; line-height: 1.5; overflow-wrap: normal; }
+    .module.bridge .module-card { border-style: dashed; border-color: #b4c5d3; background: #f6f9fc; }
+    .module.bridge .week-label { color: var(--blue); }
+    .module.bridge[open] .module-card { background: #eef4fa; }
+    .module.bridge[open] .toggle-circle { background: var(--blue); border-color: var(--blue); }
+    .module.bridge .toggle-circle { color: var(--blue); border-color: #b4c5d3; }
+    .module.bridge[open] .toggle-circle { color: white; }
+    .questions { padding: 26px 0 0; }
+    .questions-heading { display: flex; align-items: baseline; flex-wrap: wrap; gap: 9px 20px; margin-bottom: 15px; }
+    .question-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+    .question { border-top: 2px solid #c1d5c9; padding-top: 11px; }
+    .question-label { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px; margin: 0; font-size: 13px; font-weight: 650; }
+    .optional { font-size: 10px; font-weight: 400; color: var(--muted); }
+    .question p:last-child { margin: 6px 0 0; font-size: 12px; color: var(--muted); line-height: 1.7; }
+    @media (max-width: 1000px) {
+      .page { padding: 25px 24px 24px; }
+    }
+    @media (max-width: 600px) {
+      .page { padding: 18px 16px; }
+      .masthead { gap: 10px; padding-bottom: 16px; }
+      .institution { font-size: 11px; }
+      .course-id { gap: 8px; }
+      .masthead-label { font-size: 11px; }
+      .intro { padding: 24px 0; }
+      .intro-copy { font-size: 14px; }
+      .map-header { padding: 18px 18px 15px; }
+      .map-caption { font-size: 12px; }
+      .map-scroll { padding: 22px 18px; overflow-x: visible; }
+      .roadmap { display: block; min-width: 0; }
+      .module { margin-bottom: 27px; }
+      .module:last-child { margin-bottom: 0; }
+      .module:not(:last-child)::after, .module:not(:last-child)::before { display: none; }
+      .module-card { height: auto; min-height: 100px; padding: 15px 16px; }
+      .module-title { margin-top: 10px; font-size: 20px; }
+      .module-top { font-size: 11px; }
+      .week-card { padding: 14px; }
+      h3 { font-size: 15px; }
+      .week-label { font-size: 11px; }
+      .toggle-label { font-size: 12px; }
+      .question-grid { grid-template-columns: 1fr; gap: 18px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      * { transition: none !important; }
+    }
+    @media print {
+      body { background: white; font-size: 12px; }
+      .page { padding: 0; width: 100%; }
+      .skip-link, .toolbar, .toggle-row, .scroll-hint, #expansion-status { display: none !important; }
+      .map-scroll { overflow: visible; }
+      .roadmap { min-width: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+      .module::before, .module::after { display: none !important; }
+      .module-card { height: auto; min-height: 0; }
+      .week-list { display: block !important; }
+      .module, .week-card { break-inside: avoid; }
+      .question-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#course-map">Skip to the course map</a>
+  <main class="page">
+    <header class="masthead">
+      <div class="course-id"><span class="course-number">159223</span><span class="masthead-label">Course guide</span></div>
+      <span class="institution">Massey University</span>
+    </header>
+
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">The course at a glance</p>
+      <h1 id="page-title">Artificial Intelligence Methods</h1>
+      <p class="intro-copy">Learn to represent problems, reason under uncertainty, and choose actions.<br>Explore the map below to see how the course unfolds, week by week.</p>
+      <div class="meta"><span>12 teaching weeks</span><span>Classical AI foundations</span><span>Reasoning, search &amp; decision making</span></div>
+    </section>
+
+    <section class="map-panel" id="course-map" aria-labelledby="map-title">
+      <div class="map-header">
+        <div><h2 id="map-title">Your learning pathway</h2><p class="map-caption">Select a module or its circle to reveal the topics below it.</p></div>
+        <div class="toolbar" id="map-toolbar" hidden>
+          <button class="tool-button" type="button" id="expand-all">Expand all</button>
+          <button class="tool-button" type="button" id="collapse-all">Collapse all</button>
+        </div>
+      </div>
+      <p class="scroll-hint" id="scroll-hint" hidden>Scroll horizontally to explore all six parts of the pathway.</p>
+      <div class="map-scroll" id="map-scroll" role="region" aria-label="Course modules in teaching order" tabindex="0">
+        <div class="roadmap" id="roadmap">
+          <!-- Teaching order is intentional: the concurrent algorithms course covers trees and graphs before W9. -->
+          <details class="module" id="introduction">
+            <summary aria-label="Introduction, weeks 1 to 2. Expand or collapse topics.">
+              <div class="module-card">
+                <div class="module-top"><span class="module-weeks">Weeks 1–2</span></div>
+                <span class="module-title">Introduction</span>
+              </div>
+              <span class="toggle-row"><span class="toggle-circle" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10" stroke="currentColor" stroke-width="1.7"/><path class="plus-vertical" d="M8 3v10" stroke="currentColor" stroke-width="1.7"/></svg></span><span class="toggle-label"><span class="label-closed">Show weeks</span><span class="label-open">Hide weeks</span></span></span>
+            </summary>
+            <div class="week-list">
+              <article class="week-card"><p class="week-label">Week 1</p><h3>Intro to AI</h3></article>
+              <article class="week-card"><p class="week-label">Week 2</p><h3>Python for AI</h3></article>
+            </div>
+          </details>
+
+          <details class="module" id="logic">
+            <summary aria-label="Logic, week 3. Expand or collapse topics.">
+              <div class="module-card">
+                <div class="module-top"><span class="module-weeks">Week 3</span></div>
+                <span class="module-title">Logic</span>
+              </div>
+              <span class="toggle-row"><span class="toggle-circle" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10" stroke="currentColor" stroke-width="1.7"/><path class="plus-vertical" d="M8 3v10" stroke="currentColor" stroke-width="1.7"/></svg></span><span class="toggle-label"><span class="label-closed">Show weeks</span><span class="label-open">Hide weeks</span></span></span>
+            </summary>
+            <div class="week-list"><article class="week-card"><p class="week-label">Week 3</p><h3>Propositional Logic</h3></article></div>
+          </details>
+
+          <details class="module" id="variable-models">
+            <summary aria-label="Variable-based Models, weeks 4 to 8. Expand or collapse topics.">
+              <div class="module-card">
+                <div class="module-top"><span class="module-weeks">Weeks 4–8</span></div>
+                <span class="module-title">Variable-based<br>Models</span>
+              </div>
+              <span class="toggle-row"><span class="toggle-circle" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10" stroke="currentColor" stroke-width="1.7"/><path class="plus-vertical" d="M8 3v10" stroke="currentColor" stroke-width="1.7"/></svg></span><span class="toggle-label"><span class="label-closed">Show weeks</span><span class="label-open">Hide weeks</span></span></span>
+            </summary>
+            <div class="week-list">
+              <article class="week-card"><p class="week-label">Week 4</p><h3>Constraint Satisfaction Problems</h3></article>
+              <article class="week-card"><p class="week-label">Week 5</p><h3>Bayesian Networks</h3></article>
+              <article class="week-card"><p class="week-label">Week 6</p><h3>Markov Chains &amp; HMMs</h3></article>
+              <article class="week-card"><p class="week-label">Week 7</p><h3>Markov Decision Processes</h3></article>
+              <article class="week-card"><p class="week-label">Week 8</p><h3>Reinforcement Learning</h3></article>
+            </div>
+          </details>
+
+          <details class="module" id="state-models">
+            <summary aria-label="State-space Models, weeks 9 to 11. Expand or collapse topics.">
+              <div class="module-card">
+                <div class="module-top"><span class="module-weeks">Weeks 9–11</span></div>
+                <span class="module-title">State-space<br>Models</span>
+              </div>
+              <span class="toggle-row"><span class="toggle-circle" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10" stroke="currentColor" stroke-width="1.7"/><path class="plus-vertical" d="M8 3v10" stroke="currentColor" stroke-width="1.7"/></svg></span><span class="toggle-label"><span class="label-closed">Show weeks</span><span class="label-open">Hide weeks</span></span></span>
+            </summary>
+            <div class="week-list">
+              <article class="week-card"><p class="week-label">Week 9</p><h3>Search Overview</h3></article>
+              <article class="week-card"><p class="week-label">Week 10</p><h3>DFS, UCS &amp; A*</h3></article>
+              <article class="week-card"><p class="week-label">Week 11</p><h3>Adversarial Games</h3></article>
+            </div>
+          </details>
+
+          <details class="module review" id="review">
+            <summary aria-label="Review, week 12. Expand or collapse topics.">
+              <div class="module-card">
+                <div class="module-top"><span class="module-weeks">Week 12</span></div>
+                <span class="module-title">Review</span>
+              </div>
+              <span class="toggle-row"><span class="toggle-circle" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10" stroke="currentColor" stroke-width="1.7"/><path class="plus-vertical" d="M8 3v10" stroke="currentColor" stroke-width="1.7"/></svg></span><span class="toggle-label"><span class="label-closed">Show weeks</span><span class="label-open">Hide weeks</span></span></span>
+            </summary>
+            <div class="week-list"><article class="week-card"><p class="week-label">Week 12</p><h3>Review &amp; Integration</h3></article></div>
+          </details>
+
+          <details class="module bridge" id="next-course">
+            <summary aria-label="159224 Methods in Machine Learning. Expand or collapse the course preview.">
+              <div class="module-card">
+                <div class="module-top"><span class="module-weeks">159224</span></div>
+                <span class="module-title">Machine<br>Learning</span>
+              </div>
+              <span class="toggle-row"><span class="toggle-circle" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10" stroke="currentColor" stroke-width="1.7"/><path class="plus-vertical" d="M8 3v10" stroke="currentColor" stroke-width="1.7"/></svg></span><span class="toggle-label"><span class="label-closed">Show preview</span><span class="label-open">Hide preview</span></span></span>
+            </summary>
+            <div class="week-list">
+              <article class="week-card"><p class="week-label">159224</p><h3>Machine Learning Basics</h3></article>
+              <article class="week-card"><p class="week-label">159224</p><h3>Neural Networks</h3></article>
+            </div>
+          </details>
+        </div>
+      </div>
+      <span class="sr-only" id="expansion-status" role="status" aria-live="polite">Choose any module to begin</span>
+    </section>
+
+    <section class="questions" aria-labelledby="questions-title">
+      <div class="questions-heading"><h2 id="questions-title">Three questions to carry through the course</h2></div>
+      <div class="question-grid">
+        <div class="question"><p class="question-label">Modeling</p><p>How do we represent the problem and its assumptions?</p></div>
+        <div class="question"><p class="question-label">Training <span class="optional">where applicable</span></p><p>How do we learn model parameters or a policy from data or experience?</p></div>
+        <div class="question"><p class="question-label">Inference</p><p>How do we use the model to answer a query or process new input?</p></div>
+      </div>
+    </section>
+
+  </main>
+  <script>
+    // The module cards use native <details>: they also work without JavaScript.
+    (() => {
+      const modules = Array.from(document.querySelectorAll('.module'));
+      const expand = document.getElementById('expand-all');
+      const collapse = document.getElementById('collapse-all');
+      const status = document.getElementById('expansion-status');
+      const scroller = document.getElementById('map-scroll');
+      const hint = document.getElementById('scroll-hint');
+      let printState = null;
+
+      const update = () => {
+        const count = modules.filter(module => module.open).length;
+        expand.disabled = count === modules.length;
+        collapse.disabled = count === 0;
+        status.textContent = count ? `${count} of ${modules.length} sections expanded` : 'Choose any module to begin';
+      };
+      const updateOverflow = () => {
+        const overflow = scroller.scrollWidth > scroller.clientWidth + 2;
+        hint.hidden = !overflow;
+        scroller.tabIndex = overflow ? 0 : -1;
+      };
+      modules.forEach(module => module.addEventListener('toggle', update));
+      expand.addEventListener('click', () => { modules.forEach(module => { module.open = true; }); update(); });
+      collapse.addEventListener('click', () => { modules.forEach(module => { module.open = false; }); update(); });
+      document.getElementById('map-toolbar').hidden = false;
+      window.addEventListener('beforeprint', () => {
+        if (!printState) printState = modules.map(module => module.open);
+        modules.forEach(module => { module.open = true; });
+      });
+      window.addEventListener('afterprint', () => {
+        if (printState) modules.forEach((module, index) => { module.open = printState[index]; });
+        printState = null;
+        update();
+      });
+      if ('ResizeObserver' in window) new ResizeObserver(updateOverflow).observe(scroller);
+      else window.addEventListener('resize', updateOverflow);
+      update();
+      updateOverflow();
+    })();
+  </script>
+</body>
+</html>
