@@ -29,22 +29,11 @@
     .skip-link { position: absolute; left: 24px; top: -80px; z-index: 10; padding: 9px 16px; background: white; color: var(--ink); }
     .skip-link:focus { top: 12px; }
     .page { width: min(1560px, 100%); margin: 0 auto; padding: 28px 32px 24px; }
-    .masthead { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding-bottom: 22px; border-bottom: 1px solid var(--line); }
-    .course-id { display: inline-flex; align-items: center; gap: 12px; }
-    .course-number { padding: 4px 10px; border: 1px solid #b9cec4; border-radius: 5px; background: var(--tint); color: #20584d; font-size: 13px; font-weight: 700; letter-spacing: .04em; }
-    .masthead-label { font-size: 13px; color: var(--muted); }
-    .institution { font-size: 13px; color: var(--muted); }
-    .intro { padding: 28px 0 24px; }
-    .eyebrow { margin: 0 0 8px; color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    .intro { padding: 10px 0 28px; }
     h1 { margin: 0; font-size: clamp(27px, 3.1vw, 40px); font-weight: 650; line-height: 1.2; letter-spacing: -.035em; }
-    .intro-copy { max-width: 730px; margin: 13px 0 0; color: var(--muted); font-size: 16px; line-height: 1.65; }
-    .meta { display: flex; flex-wrap: wrap; gap: 9px 22px; margin: 18px 0 0; font-size: 12px; color: var(--muted); }
-    .meta span { display: flex; align-items: center; gap: 7px; }
-    .meta span::before { content: ""; width: 4px; height: 4px; border-radius: 50%; background: #8a9c94; }
     .map-panel { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; }
     .map-header { padding: 23px 26px 19px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; border-bottom: 1px solid #e8edeb; }
     h2 { margin: 0; font-size: 18px; font-weight: 650; letter-spacing: -.015em; }
-    .map-caption { margin: 3px 0 0; font-size: 13px; color: var(--muted); }
     .toolbar { display: flex; gap: 8px; }
     .tool-button { padding: 7px 12px; background: white; color: #374750; border: 1px solid var(--line); border-radius: 5px; font-size: 12px; cursor: pointer; }
     .tool-button:hover { background: #f2f6f4; border-color: #a8bdb3; }
@@ -87,26 +76,21 @@
     .module.bridge[open] .toggle-circle { background: var(--blue); border-color: var(--blue); }
     .module.bridge .toggle-circle { color: var(--blue); border-color: #b4c5d3; }
     .module.bridge[open] .toggle-circle { color: white; }
-    .questions { padding: 26px 0 0; }
+    .questions { padding: 30px 0 0; }
+    .questions h2 { font-size: 22px; }
     .questions-heading { display: flex; align-items: baseline; flex-wrap: wrap; gap: 9px 20px; margin-bottom: 15px; }
-    .question-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
-    .question { border-top: 2px solid #c1d5c9; padding-top: 11px; }
-    .question-label { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px; margin: 0; font-size: 13px; font-weight: 650; }
-    .optional { font-size: 10px; font-weight: 400; color: var(--muted); }
-    .question p:last-child { margin: 6px 0 0; font-size: 12px; color: var(--muted); line-height: 1.7; }
+    .question-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+    .question { border-top: 2px solid #c1d5c9; padding-top: 14px; }
+    .question-label { display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px; margin: 0; font-size: 20px; font-weight: 650; }
+    .optional { font-size: 13px; font-weight: 400; color: var(--muted); }
+    .question p:last-child { margin: 7px 0 0; font-size: 16px; color: var(--muted); line-height: 1.7; }
     @media (max-width: 1000px) {
       .page { padding: 25px 24px 24px; }
     }
     @media (max-width: 600px) {
       .page { padding: 18px 16px; }
-      .masthead { gap: 10px; padding-bottom: 16px; }
-      .institution { font-size: 11px; }
-      .course-id { gap: 8px; }
-      .masthead-label { font-size: 11px; }
-      .intro { padding: 24px 0; }
-      .intro-copy { font-size: 14px; }
+      .intro { padding: 8px 0 24px; }
       .map-header { padding: 18px 18px 15px; }
-      .map-caption { font-size: 12px; }
       .map-scroll { padding: 22px 18px; overflow-x: visible; }
       .roadmap { display: block; min-width: 0; }
       .module { margin-bottom: 27px; }
@@ -119,7 +103,7 @@
       h3 { font-size: 15px; }
       .week-label { font-size: 11px; }
       .toggle-label { font-size: 12px; }
-      .question-grid { grid-template-columns: 1fr; gap: 18px; }
+      .question-grid { gap: 18px; }
     }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
@@ -135,28 +119,20 @@
       .module-card { height: auto; min-height: 0; }
       .week-list { display: block !important; }
       .module, .week-card { break-inside: avoid; }
-      .question-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .question-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
   <a class="skip-link" href="#course-map">Skip to the course map</a>
   <main class="page">
-    <header class="masthead">
-      <div class="course-id"><span class="course-number">159223</span><span class="masthead-label">Course guide</span></div>
-      <span class="institution">Massey University</span>
-    </header>
-
     <section class="intro" aria-labelledby="page-title">
-      <p class="eyebrow">The course at a glance</p>
       <h1 id="page-title">Artificial Intelligence Methods</h1>
-      <p class="intro-copy">Learn to represent problems, reason under uncertainty, and choose actions.<br>Explore the map below to see how the course unfolds, week by week.</p>
-      <div class="meta"><span>12 teaching weeks</span><span>Classical AI foundations</span><span>Reasoning, search &amp; decision making</span></div>
     </section>
 
     <section class="map-panel" id="course-map" aria-labelledby="map-title">
       <div class="map-header">
-        <div><h2 id="map-title">Your learning pathway</h2><p class="map-caption">Select a module or its circle to reveal the topics below it.</p></div>
+        <h2 id="map-title">Your learning pathway</h2>
         <div class="toolbar" id="map-toolbar" hidden>
           <button class="tool-button" type="button" id="expand-all">Expand all</button>
           <button class="tool-button" type="button" id="collapse-all">Collapse all</button>
@@ -202,7 +178,7 @@
             <div class="week-list">
               <article class="week-card"><p class="week-label">Week 4</p><h3>Constraint Satisfaction Problems</h3></article>
               <article class="week-card"><p class="week-label">Week 5</p><h3>Bayesian Networks</h3></article>
-              <article class="week-card"><p class="week-label">Week 6</p><h3>Markov Chains &amp; HMMs</h3></article>
+              <article class="week-card"><p class="week-label">Week 6</p><h3>HMM</h3></article>
               <article class="week-card"><p class="week-label">Week 7</p><h3>Markov Decision Processes</h3></article>
               <article class="week-card"><p class="week-label">Week 8</p><h3>Reinforcement Learning</h3></article>
             </div>
@@ -231,7 +207,7 @@
               </div>
               <span class="toggle-row"><span class="toggle-circle" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10" stroke="currentColor" stroke-width="1.7"/><path class="plus-vertical" d="M8 3v10" stroke="currentColor" stroke-width="1.7"/></svg></span><span class="toggle-label"><span class="label-closed">Show weeks</span><span class="label-open">Hide weeks</span></span></span>
             </summary>
-            <div class="week-list"><article class="week-card"><p class="week-label">Week 12</p><h3>Review &amp; Integration</h3></article></div>
+            <div class="week-list"><article class="week-card"><p class="week-label">Week 12</p><h3>Course Review</h3></article></div>
           </details>
 
           <details class="module bridge" id="next-course">
